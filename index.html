@@ -1,5 +1,52 @@
-<h1>Hello World!</h1>
 
-<p>
-  This is a simple plain-HTML website on GitLab Pages, without any fancy static site generator.
-</p>
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Designery by Nikita Mehta Shah</title>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/jquery-1.12.0.min.js"></script>
+    <script src="/javascripts/all.js"></script>
+    <script src="https://use.typekit.net/kzv6isg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript">
+      var angleRad = Math.atan2($(window).width(),$(window).height());
+      var angleDeg = angleRad * (180/Math.PI);
+      $(document).ready(function() {
+        $(window).resize(function() {
+          angleRad = Math.atan2($(window).width(),$(window).height());
+          angleDeg = angleRad * (180/Math.PI);
+          $(".logo-background").css({
+            "background": "linear-gradient(" + (90+angleDeg) + "deg, #f0566a 50%, #713846 50%)"
+          });
+        });
+        $(".logo-background").css({
+          "background": "linear-gradient(" + (90+angleDeg) + "deg, #f0566a 50%, #713846 50%)"
+        });
+      });
+    </script>
+  </head>
+
+  <body class="index">
+    <div class="logo-background"></div>
+<img class="logo" src="images/logo.svg" alt="The Designery by Nikita Mehta Shah Logo" />
+<h2>Coming Soon</h2>
+<div class="social-media">
+  <p>UNTIL THEN FOLLOW FOR ALL UPDATES:</p>
+  <div class="instagram">
+    <a href="https://www.instagram.com/nikita_mehta_shah_thedesignery/"><img src="images/instagram.svg" alt="" /></a>
+    <a href="https://www.instagram.com/nikita_mehta_shah_thedesignery/">@nikita_mehta_shah_thedesignery</a>
+  </div>
+  <div class="facebook">
+    <a href="https://www.facebook.com/thedesigneryindia/"><img src="images/facebook.svg" alt="" /></a>
+    <a href="https://www.facebook.com/thedesigneryindia/">/thedesignery</a>
+  </div>
+</div>
+
+  </body>
+</html>
