@@ -12,8 +12,8 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    background: -webkit-linear-gradient(left top,#d1b061 50%,#203643 50%);
-    background: linear-gradient(to right bottom,#d1b061 50%,#203643 50%);
+    background: -webkit-linear-gradient(left top,#d1b061 49.9%,#203643 50.1%);
+    background: linear-gradient(to right bottom,#d1b061 49.9%,#203643 50.1%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
