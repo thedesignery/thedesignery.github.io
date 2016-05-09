@@ -1,21 +1,18 @@
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 body {
     position: relative;
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
     margin: 0;
+    background: -webkit-linear-gradient(left top,#d1b061 50%,#203643 50%);
     background: linear-gradient(to right bottom,#d1b061 50%,#203643 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,7 +26,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     border-radius: 50%;
 }
 
@@ -38,34 +36,53 @@ h2 {
     position: absolute;
     left: 50%;
     top: 70%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-weight: 300;
 }
 
 img.logo {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 .social-media {
     width: 18%;
     height: 25%;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
     bottom: 2%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .instagram, .facebook, .twitter {
     display: inline-block;
-    width: 5vmin;
-    height: 5vmin;
+    width: 4vmin;
+    height: 4vmin;
+}
+
+.twitter {
+  width: 4.3vmin;
+  height: 4.3vmin;
 }
 
 .instagram img, .facebook img, .twitter img {
