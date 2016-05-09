@@ -117,13 +117,28 @@ img.logo {
     }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 2560px) {
   .logo-background {
       width: 16%;
       padding-top: 16%;
   }
+
   img.logo {
       width: 6%;
       height: auto;
+  }
+
+  h2 {
+    font-size: 3vmin;
+  }
+
+  .instagram, .facebook, .twitter {
+      width: 3vmin;
+      height: 3vmin;
+  }
+
+  .twitter {
+    width: 3.3vmin;
+    height: 3.3vmin;
   }
 }
